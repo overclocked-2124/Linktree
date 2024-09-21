@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Bohemian Typewriter';
+  src: url('./fonts/bohemian-typewriter.woff2') format('woff2'),
+       url('./fonts/bohemian-typewriter.woff') format('woff'),
+       url('./fonts/bohemian-typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+body {
+  font-family: "Bohemian Typewriter", sans-serif;
+  background-color: #94D1BE;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.photo {
+  margin: 0 auto 20px;
+  border: 4px solid #fff;
+  padding: 4px;
+  border-radius: 50%;
+  width: 150px; /* Increased size */
+  height: 150px; /* Increased size */
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: url("profile.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.profile_name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 10px;
+}
+
+/* Button Styles */
+.custom-btn {
+  width: 100%;
+  height: 50px;
+  margin: 12px 0;
+  border-radius: 10px;
+  font-family: "Bohemian Typewriter", sans-serif;
+  color: #fff; /* Updated text color to ensure visibility */
+  background-color: #3B413C; /* Updated background color */
+  border: 1px solid #3B413C; /* Updated border color */
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+.custom-btn:hover {
+  background-color: #5a635e; /* Slightly lighter color on hover */
+}
+
+.custom-btn:active {
+  transform: translateY(0);
+  background-color: #2d312d; /* Darker color when clicked */
+}
